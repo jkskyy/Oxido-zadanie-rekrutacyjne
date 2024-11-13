@@ -6,12 +6,12 @@ Aby uruchomić aplikację, na komputerze musi być zainstalowane oprogramowanie 
 
 ## Opis aplikacji
 
-Aplikacja wykonuje automatyczne przetwarzanie tekstu zawartego w pliku tekstowym _Zadanie dla JJunior AI Developera - tresc artykulu.txt_. Korzysta z OpenAI API (model GPT-4), aby na podstawie tego tekstu stworzyć artykuł, który będzie zawierał odpowiednią strukturę HTML. Artykuł nie zawiera głównych znaczników HTML takich jak _<html>_, _<head>_ i _<body>_, a jedynie elementy strukturalne, jak nagłówki, akapity i obrazki.
+Aplikacja wykonuje automatyczne przetwarzanie tekstu zawartego w pliku tekstowym _Zadanie dla JJunior AI Developera - tresc artykulu.txt_. Korzysta z OpenAI API (model GPT-4), aby na podstawie tego tekstu stworzyć artykuł, który będzie zawierał odpowiednią strukturę HTML. Artykuł nie zawiera głównych znaczników HTML takich jak _< html >_, _< head >_ i _< body >_, a jedynie elementy strukturalne, jak nagłówki, akapity i obrazki.
 
 **Główne funkcjonalności aplikacji:**
 - Wczytanie treści z pliku tekstowego.
 - Wykorzystanie modelu GPT-4 do generowania artykułu na podstawie załadowanego tekstu.
-- Dodanie tagów HTML do struktury artykułu, takich jak _<h1>_, _<h2>_, _<p>_, _<img>_, itp.
+- Dodanie tagów HTML do struktury artykułu, takich jak _< h1 >_, _< h2 >_, _< p >_, _< img >_, itp.
 - Zapisywanie wygenerowanego artykułu w pliku _artykul.html_.
 - Proponowanie miejsc, gdzie można dodać obrazy w artykule, z przykładami nazw plików obrazów i opisami (_alt_).
 
@@ -43,10 +43,10 @@ Aplikacja zacznie działać i pierwszym krokiem będzie wczytanie zawartości pl
 Po załadowaniu danych aplikacja przekaże tekst do modelu GPT-4, który na jego podstawie stworzy artykuł. Model GPT-4 stworzy treść, używając odpowiednich tagów HTML. 
 
 ### 6. Generowanie artykułu
-Aplikacja otrzyma odpowiedź od OpenAI API. Artykuł zostanie wygenerowany bez tagów _<html>_, _<head>_ i _<body>_. Znajdą się w nim tylko tagi strukturalne, takie jak:
-- _<h1>_, _<h2>_ dla nagłówków,
-- _<p>_ dla akapitów,
-- _<img>_ w miejscach sugerowanych do umieszczenia zdjęć.
+Aplikacja otrzyma odpowiedź od OpenAI API. Artykuł zostanie wygenerowany bez tagów _< html >_, _< head >_ i _< body >_. Znajdą się w nim tylko tagi strukturalne, takie jak:
+- _< h1 >_, _< h2 >_ dla nagłówków,
+- _< p >_ dla akapitów,
+- _< img >_ w miejscach sugerowanych do umieszczenia zdjęć.
 
 ### 7. Zapisanie artykułu
 Po wygenerowaniu artykułu, aplikacja zapisze go do pliku _artykul.html_. Jeśli zapis zostanie zakończony pomyślnie, w konsoli pojawi się komunikat:
